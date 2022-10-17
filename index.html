@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {}
+
+        .titlehome {
+            font-size: 23px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .titlehome::after {
+            content: "";
+            position: absolute;
+            border-top: 1px solid #f67519;
+            top: 90%;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            bottom: 0;
+            margin: 0 auto;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="titlehome"><span>Border Css </span></div>
+</body>
+
+</html>
